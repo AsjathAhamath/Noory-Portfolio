@@ -14,3 +14,21 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Tailwind CSS setup (added)
+
+This project has been updated with Tailwind CSS configuration files (`tailwind.config.cjs` and `postcss.config.cjs`) and the app UI rewritten to use Tailwind utility classes.
+
+To install dependencies and run the dev server on Windows PowerShell, run:
+
+```powershell
+npm install
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm run dev
+```
+
+Notes:
+
+- I already added `tailwind.config.cjs` and `postcss.config.cjs` and replaced `src/index.css` with Tailwind directives. Running the commands above will install Tailwind and allow the dev server to process the styles.
+- Update `src/App.jsx` with your personal details, projects and profile image.
