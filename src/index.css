@@ -1,43 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* index.css is intentionally left minimal: Tailwind is imported in src/App.css now.
+   Keep a small file here in case other imports reference it; the app's stylesheet
+   is `src/App.css` and is imported from `src/main.jsx`.
+*/
 
-/* Custom base styles to keep the project's look when Tailwind is enabled */
-@layer base {
-  :root {
-    font-family: system-ui, Avenir, "Helvetica Neue", Helvetica, Arial,
-      sans-serif;
-    color-scheme: light dark;
-  }
-
-  html,
-  body,
-  #root {
-    height: 100%;
-  }
-
-  body {
-    @apply bg-gray-900 text-gray-100 antialiased;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  a {
-    @apply font-medium text-brand-500;
-    text-decoration: none;
-  }
-
-  button {
-    @apply rounded-md px-4 py-2 text-sm font-medium bg-gray-800 hover:bg-gray-700;
-  }
-
-  h1 {
-    @apply text-4xl md:text-5xl font-extrabold leading-tight;
-  }
-}
-
-/* Utility helper for container width */
-.page-container {
-  @apply max-w-5xl mx-auto px-6 py-12;
-}
+/* no-op placeholder */
