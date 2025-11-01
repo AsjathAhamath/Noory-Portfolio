@@ -347,7 +347,8 @@ function About() {
             {/* Animated border gradient */}
             <div className="absolute -inset-2 bg-gradient-to-r from-portfolio-purple via-portfolio-lightPurple to-portfolio-accent rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
 
-            <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-portfolio-purple/50 group-hover:border-portfolio-purple transition-all duration-500">
+            {/* Smaller card size for About image */}
+            <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-3xl overflow-hidden shadow-2xl border-4 border-portfolio-purple/50 group-hover:border-portfolio-purple transition-all duration-500">
               <img
                 src="https://placehold.co/500x500/2a2a2a/ffffff?text=About+Image"
                 alt="About Izzath Noory"
@@ -610,9 +611,9 @@ function Contact() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-portfolio-purple/10 rounded-full blur-3xl"></div>
 
       <div className="page-container relative z-10">
-        <div className="flex items-center justify-center gap-3 mb-6 lg:mb-8">
+        <div className="flex items-center justify-center gap-3 mb-8 lg:mb-12">
           <svg
-            className="w-10 h-10 text-portfolio-purple"
+            className="w-8 h-8 text-portfolio-purple"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -628,7 +629,7 @@ function Contact() {
             Contact Me
           </h3>
         </div>
-        <div className="max-w-3xl mx-auto bg-gray-900/50 backdrop-blur-sm p-6 lg:p-8 rounded-2xl border border-gray-800/50 shadow-2xl">
+        <div className="mx-auto bg-gray-900/50 backdrop-blur-sm p-6 lg:p-8 rounded-2xl border border-gray-800/50 shadow-2xl w-full min-h-[28rem] max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
